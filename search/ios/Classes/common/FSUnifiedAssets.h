@@ -5,7 +5,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface UnifiedAssets : NSObject
+@interface FSUnifiedAssets : NSObject
 + (NSString *)getAssetPath: (NSString *)asset;
 
 + (NSString *)getDefaultAssetPath: (NSString *)asset;

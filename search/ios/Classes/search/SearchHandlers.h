@@ -3,7 +3,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IMethodHandler.h"
 #import "AMapSearchAPI.h"
 
 @protocol SearchMethodHandler;

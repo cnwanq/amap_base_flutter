@@ -2,10 +2,10 @@
 // Created by Yohom Bao on 2018-12-01.
 //
 
-#import "UnifiedAssets.h"
+#import "FSUnifiedAssets.h"
 #import "AMapBaseSearchPlugin.h"
 
-@implementation UnifiedAssets {
+@implementation FSUnifiedAssets {
 
 }
 + (NSString *)getAssetPath:(NSString *)asset {

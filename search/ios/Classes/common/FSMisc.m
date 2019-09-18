@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 songjian. All rights reserved.
 //
 
-#import "Misc.h"
+#import "FSMisc.h"
 
-@implementation Misc
+@implementation FSMisc
 
 + (NSString *)toAMapErrorDesc:(NSInteger)errorCode {
     switch (errorCode) {

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Flutter/Flutter.h"
 
-@interface Misc : NSObject
+@interface FSMisc : NSObject
 
 
 +(NSString* ) toAMapErrorDesc:(NSInteger) errorCode;

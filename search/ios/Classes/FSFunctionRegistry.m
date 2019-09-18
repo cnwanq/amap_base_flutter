@@ -2,13 +2,13 @@
 // Created by Yohom Bao on 2018-12-12.
 //
 
-#import "FunctionRegistry.h"
+#import "FSFunctionRegistry.h"
 #import "IMethodHandler.h"
 #import "SearchHandlers.h"
 
 static NSDictionary<NSString *, NSObject <MapMethodHandler> *> *_mapDictionary;
 
-@implementation MapFunctionRegistry {
+@implementation FSMapFunctionRegistry {
 }
 
 + (NSDictionary<NSString *, NSObject <MapMethodHandler> *> *)mapMethodHandler {
@@ -22,7 +22,7 @@ static NSDictionary<NSString *, NSObject <MapMethodHandler> *> *_mapDictionary;
 
 static NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *_searchDictionary;
 
-@implementation SearchFunctionRegistry {
+@implementation FSSearchFunctionRegistry {
 
 }
 + (NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *)searchMethodHandler {
@@ -49,7 +49,7 @@ static NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *_searchDictio
 
 static NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *_naviDictionary;
 
-@implementation NaviFunctionRegistry {
+@implementation FSNaviFunctionRegistry {
 
 }
 + (NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *)naviMethodHandler {
@@ -64,7 +64,7 @@ static NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *_naviDictionary
 
 static NSDictionary<NSString *, NSObject <LocationMethodHandler> *> *_locationDictionary;
 
-@implementation LocationFunctionRegistry {
+@implementation FSLocationFunctionRegistry {
 
 }
 + (NSDictionary<NSString *, NSObject <LocationMethodHandler> *> *)locationMethodHandler {

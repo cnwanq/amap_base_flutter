@@ -6,6 +6,7 @@
 #import "Misc.h"
 #import "MJExtension.h"
 #import "SearchModels.h"
+#import "IMethodHandler.h"
 
 #define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
