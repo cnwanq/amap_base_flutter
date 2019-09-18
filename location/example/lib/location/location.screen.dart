@@ -1,6 +1,6 @@
-import 'package:amap_base_example/utils/misc.dart';
-import 'package:amap_base_example/widgets/button.widget.dart';
-import 'package:amap_base_example/widgets/dimens.dart';
+import '../utils/misc.dart';
+import '../widgets/button.widget.dart';
+import '../widgets/dimens.dart';
 import 'package:amap_base_location/amap_base_location.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +43,7 @@ class _LocationDemoState extends State<LocationDemo>
                     locatingWithReGeocode: true,
                   );
 
-                  if (await Permissions().requestPermission()) {
+                  if (await Permissions.requestMapPermission()) {
                     _amapLocation
                         .getLocation(options)
                         .then(_result.add)
@@ -62,7 +62,7 @@ class _LocationDemoState extends State<LocationDemo>
                     locatingWithReGeocode: true,
                   );
 
-                  if (await Permissions().requestPermission()) {
+                  if (await Permissions.requestMapPermission()) {
                     _amapLocation
                         .startLocate(options)
                         .map(_result.add)

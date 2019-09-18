@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:amap_base_core/amap_base_core.dart';
-import 'package:amap_base_example/widgets/setting.widget.dart';
+import '../../widgets/setting.widget.dart';
 import 'package:amap_base_map/amap_base_map.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
@@ -215,7 +215,7 @@ class _ShowMapScreenState extends State<ShowMapScreen> {
     bool enablePulseAnnimation,
     String image,
   }) async {
-    if (await Permissions().requestPermission()) {
+    if (await Permissions.requestMapPermission()) {
       _myLocationStyle = _myLocationStyle.copyWith(
         myLocationIcon: myLocationIcon,
         anchorU: anchorU,
@@ -234,7 +234,7 @@ class _ShowMapScreenState extends State<ShowMapScreen> {
       );
       _controller.setMyLocationStyle(_myLocationStyle);
     } else {
-      showError(context, '权限不足');
+      // showError(context, '权限不足');
     }
   }
 
