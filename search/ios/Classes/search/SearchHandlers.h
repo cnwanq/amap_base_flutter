@@ -6,8 +6,8 @@
 #import "IMethodHandler.h"
 #import "AMapSearchAPI.h"
 
-@SearchMethodHandler;
-@AMapSearchDelegate;
+@protocol SearchMethodHandler;
+@protocol AMapSearchDelegate;
 
 @interface SearchGeocode : NSObject <SearchMethodHandler, AMapSearchDelegate>
 @end
