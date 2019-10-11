@@ -3,7 +3,7 @@
 //
 
 #import "SearchHandlers.h"
-#import "Misc.h"
+#import "FSMisc.h"
 #import "MJExtension.h"
 #import "SearchModels.h"
 #import "IMethodHandler.h"
@@ -58,7 +58,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 
@@ -117,7 +117,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 
@@ -163,7 +163,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 @end
@@ -208,7 +208,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 @end
@@ -251,7 +251,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 @end
@@ -296,7 +296,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 
@@ -342,7 +342,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 
@@ -388,7 +388,7 @@
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   NSLog(@"搜索失败回调");
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 
@@ -613,7 +613,7 @@
 /// 搜索失败回调
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error {
   _result([FlutterError errorWithCode:[NSString stringWithFormat:@"%d", error.code]
-                              message:[Misc toAMapErrorDesc:error.code]
+                              message:[FSMisc toAMapErrorDesc:error.code]
                               details:nil]);
 }
 

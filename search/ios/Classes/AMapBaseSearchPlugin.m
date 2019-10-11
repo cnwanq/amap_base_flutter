@@ -1,7 +1,7 @@
 #import "AMapServices.h"
 #import "AMapBaseSearchPlugin.h"
 #import "IMethodHandler.h"
-#import "FunctionRegistry.h"
+#import "FSFunctionRegistry.h"
 
 static NSObject <FlutterPluginRegistrar> *_registrar;
 
@@ -31,7 +31,7 @@ static NSObject <FlutterPluginRegistrar> *_registrar;
                   binaryMessenger:[registrar messenger]];
 
     [toolChannel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
-        NSObject <MapMethodHandler> *handler = [MapFunctionRegistry mapMethodHandler][call.method];
+        NSObject <MapMethodHandler> *handler = [FSMapFunctionRegistry mapMethodHandler][call.method];
         if (handler) {
             [[handler init] onMethodCall:call :result];
         } else {
@@ -45,7 +45,7 @@ static NSObject <FlutterPluginRegistrar> *_registrar;
                   binaryMessenger:[registrar messenger]];
 
     [searchChannel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
-        NSObject <SearchMethodHandler> *handler = [SearchFunctionRegistry searchMethodHandler][call.method];
+        NSObject <SearchMethodHandler> *handler = [FSSearchFunctionRegistry searchMethodHandler][call.method];
         if (handler) {
             [[handler init] onMethodCall:call :result];
         } else {

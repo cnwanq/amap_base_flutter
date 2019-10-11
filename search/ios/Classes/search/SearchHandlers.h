@@ -4,6 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AMapSearchAPI.h"
+#import "IMethodHandler.h"
 
 @protocol SearchMethodHandler;
 @protocol AMapSearchDelegate;
