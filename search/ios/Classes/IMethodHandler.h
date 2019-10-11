@@ -22,7 +22,7 @@
 //endregion
 
 //region 导航
-@protocol NaviMethodHandler <NSObject>
+@protocol FSNaviMethodHandler <NSObject>
 @required
 - (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
 @end

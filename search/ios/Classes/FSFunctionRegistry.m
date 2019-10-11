@@ -47,12 +47,12 @@ static NSDictionary<NSString *, NSObject <FSSearchMethodHandler> *> *_searchDict
 
 @end
 
-static NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *_naviDictionary;
+static NSDictionary<NSString *, NSObject <FSNaviMethodHandler> *> *_naviDictionary;
 
 @implementation FSNaviFunctionRegistry {
 
 }
-+ (NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *)naviMethodHandler {
++ (NSDictionary<NSString *, NSObject <FSNaviMethodHandler> *> *)FSNaviMethodHandler {
     if (!_naviDictionary) {
         _naviDictionary = @{
         };

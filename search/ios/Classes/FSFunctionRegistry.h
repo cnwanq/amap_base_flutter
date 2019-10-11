@@ -14,9 +14,9 @@
 + (NSDictionary<NSString *, NSObject <FSSearchMethodHandler> *> *)FSSearchMethodHandler;
 @end
 
-@protocol NaviMethodHandler;
+@protocol FSNaviMethodHandler;
 @interface FSNaviFunctionRegistry : NSObject
-+ (NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *)naviMethodHandler;
++ (NSDictionary<NSString *, NSObject <FSNaviMethodHandler> *> *)FSNaviMethodHandler;
 @end
 
 @protocol FSLocationMethodHandler;
