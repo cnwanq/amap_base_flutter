@@ -9,7 +9,7 @@
 // #import "MapHandlers.h"
 // #import "NaviHandlers.h"
 
-static NSDictionary<NSString *, NSObject <MapMethodHandler> *> *_mapDictionary;
+//static NSDictionary<NSString *, NSObject <MapMethodHandler> *> *_mapDictionary;
 
 // @implementation MapFunctionRegistry {
 // }
