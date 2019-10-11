@@ -3,13 +3,13 @@ package me.yohom.amapbase
 import me.yohom.amapbase.location.Init
 import me.yohom.amapbase.location.StartLocate
 import me.yohom.amapbase.location.StopLocate
-import me.yohom.amapbase.map.*
-import me.yohom.amapbase.navi.handler.StartNavi
+#import me.yohom.amapbase.map.*
+#import me.yohom.amapbase.navi.handler.StartNavi
 import me.yohom.amapbase.search.*
 
 /**
  * 地图功能集合
- */
+
 val MAP_METHOD_HANDLER: Map<String, MapMethodHandler> = mapOf(
         "map#setMyLocationStyle" to SetMyLocationStyle,
         "map#setUiSettings" to SetUiSettings,
@@ -35,6 +35,7 @@ val MAP_METHOD_HANDLER: Map<String, MapMethodHandler> = mapOf(
         "map#getCenterPoint" to GetCenterLnglat,
         "map#changeLatLng" to ChangeLatLng
 )
+ */
 
 /**
  * 搜索功能集合
@@ -55,10 +56,11 @@ val SEARCH_METHOD_HANDLER: Map<String, SearchMethodHandler> = mapOf(
 
 /**
  * 导航功能集合
- */
+
 val NAVI_METHOD_HANDLER: Map<String, NaviMethodHandler> = mapOf(
         "navi#startNavi" to StartNavi
 )
+ */
 
 /**
  * 定位功能集合

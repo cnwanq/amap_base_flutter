@@ -6,15 +6,15 @@
 #import <Flutter/Flutter.h>
 
 //region 地图
-@class MAMapView;
+// @class MAMapView;
 @class FlutterMethodCall;
 
-@protocol MapMethodHandler <NSObject>
-@required
-- (NSObject <MapMethodHandler> *)initWith:(MAMapView *)mapView;
-@required
-- (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
-@end
+// @protocol MapMethodHandler <NSObject>
+// @required
+// - (NSObject <MapMethodHandler> *)initWith:(MAMapView *)mapView;
+// @required
+// - (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
+// @end
 //endregion
 
 //region 搜索
@@ -25,10 +25,10 @@
 //endregion
 
 //region 导航
-@protocol NaviMethodHandler <NSObject>
-@required
-- (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
-@end
+// @protocol NaviMethodHandler <NSObject>
+// @required
+// - (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
+// @end
 //endregion
 
 //region 定位
