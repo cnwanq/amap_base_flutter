@@ -62,12 +62,12 @@ static NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *_naviDictionary
 
 @end
 
-static NSDictionary<NSString *, NSObject <LocationMethodHandler> *> *_locationDictionary;
+static NSDictionary<NSString *, NSObject <FSLocationMethodHandler> *> *_locationDictionary;
 
 @implementation FSLocationFunctionRegistry {
 
 }
-+ (NSDictionary<NSString *, NSObject <LocationMethodHandler> *> *)locationMethodHandler {
++ (NSDictionary<NSString *, NSObject <FSLocationMethodHandler> *> *)FSLocationMethodHandler {
     if (!_locationDictionary) {
         _locationDictionary = @{};
     }

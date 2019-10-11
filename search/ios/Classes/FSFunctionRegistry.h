@@ -19,7 +19,7 @@
 + (NSDictionary<NSString *, NSObject <NaviMethodHandler> *> *)naviMethodHandler;
 @end
 
-@protocol LocationMethodHandler;
+@protocol FSLocationMethodHandler;
 @interface FSLocationFunctionRegistry : NSObject
-+ (NSDictionary<NSString *, NSObject <LocationMethodHandler> *> *)locationMethodHandler;
++ (NSDictionary<NSString *, NSObject <FSLocationMethodHandler> *> *)FSLocationMethodHandler;
 @end

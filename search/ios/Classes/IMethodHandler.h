@@ -29,7 +29,7 @@
 //endregion
 
 //region 定位
-@protocol LocationMethodHandler <NSObject>
+@protocol FSLocationMethodHandler <NSObject>
 @required
 - (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
 @end
