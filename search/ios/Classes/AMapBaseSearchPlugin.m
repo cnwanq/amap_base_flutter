@@ -45,7 +45,7 @@ static NSObject <FlutterPluginRegistrar> *_registrar;
                   binaryMessenger:[registrar messenger]];
 
     [searchChannel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
-        NSObject <SearchMethodHandler> *handler = [FSSearchFunctionRegistry searchMethodHandler][call.method];
+        NSObject <FSSearchMethodHandler> *handler = [FSSearchFunctionRegistry FSSearchMethodHandler][call.method];
         if (handler) {
             [[handler init] onMethodCall:call :result];
         } else {

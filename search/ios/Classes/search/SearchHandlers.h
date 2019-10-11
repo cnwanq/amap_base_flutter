@@ -6,41 +6,41 @@
 #import "AMapSearchAPI.h"
 #import "IMethodHandler.h"
 
-@protocol SearchMethodHandler;
+@protocol FSSearchMethodHandler;
 @protocol AMapSearchDelegate;
 
-@interface SearchGeocode : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchGeocode : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchReGeocode : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchReGeocode : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchPoiBound : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchPoiBound : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchPoiId : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchPoiId : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchPoiKeyword : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchPoiKeyword : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchPoiPolygon : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchPoiPolygon : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchRoutePoiLine : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchRoutePoiLine : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchRoutePoiPolygon : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchRoutePoiPolygon : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface CalculateDriveRoute : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface CalculateDriveRoute : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface CalculateWalkRoute : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface CalculateWalkRoute : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface DistanceSearch : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface DistanceSearch : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end
 
-@interface SearchBusStation : NSObject <SearchMethodHandler, AMapSearchDelegate>
+@interface SearchBusStation : NSObject <FSSearchMethodHandler, AMapSearchDelegate>
 @end

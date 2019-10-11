@@ -20,12 +20,12 @@ static NSDictionary<NSString *, NSObject <MapMethodHandler> *> *_mapDictionary;
 
 @end
 
-static NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *_searchDictionary;
+static NSDictionary<NSString *, NSObject <FSSearchMethodHandler> *> *_searchDictionary;
 
 @implementation FSSearchFunctionRegistry {
 
 }
-+ (NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *)searchMethodHandler {
++ (NSDictionary<NSString *, NSObject <FSSearchMethodHandler> *> *)FSSearchMethodHandler {
     if (!_searchDictionary) {
         _searchDictionary = @{
                 @"search#calculateDriveRoute": [CalculateDriveRoute alloc],

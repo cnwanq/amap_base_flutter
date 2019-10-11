@@ -15,7 +15,7 @@
 //endregion
 
 //region 搜索
-@protocol SearchMethodHandler <NSObject>
+@protocol FSSearchMethodHandler <NSObject>
 @required
 - (void)onMethodCall:(FlutterMethodCall *)call :(FlutterResult)result;
 @end

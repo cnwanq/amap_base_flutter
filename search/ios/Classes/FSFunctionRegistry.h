@@ -9,9 +9,9 @@
 + (NSDictionary<NSString *, NSObject <MapMethodHandler> *> *)mapMethodHandler;
 @end
 
-@protocol SearchMethodHandler;
+@protocol FSSearchMethodHandler;
 @interface FSSearchFunctionRegistry : NSObject
-+ (NSDictionary<NSString *, NSObject <SearchMethodHandler> *> *)searchMethodHandler;
++ (NSDictionary<NSString *, NSObject <FSSearchMethodHandler> *> *)FSSearchMethodHandler;
 @end
 
 @protocol NaviMethodHandler;
