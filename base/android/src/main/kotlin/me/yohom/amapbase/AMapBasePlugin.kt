@@ -74,11 +74,13 @@ class AMapBasePlugin {
                     }
 
             // 地图计算工具相关method channel
+            /*
             MethodChannel(registrar.messenger(), "me.yohom/tool")
                     .setMethodCallHandler { call, result ->
                         MAP_METHOD_HANDLER[call.method]
                                 ?.onMethodCall(call, result) ?: result.notImplemented()
                     }
+            */
 
             // 离线地图 channel
             /*
