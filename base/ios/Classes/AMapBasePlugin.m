@@ -1,6 +1,6 @@
 #import "AMapServices.h"
 #import "AMapBasePlugin.h"
-#import "AMapViewFactory.h"
+//#import "AMapViewFactory.h"
 #import "IMethodHandler.h"
 #import "FunctionRegistry.h"
 
@@ -101,7 +101,7 @@ static NSObject <FlutterPluginRegistrar> *_registrar;
 
     // MapView
     // [_registrar registerViewFactory:[[AMapViewFactory alloc] init]
-                             withId:@"me.yohom/AMapView"];
+//                             withId:@"me.yohom/AMapView"];
 
 }
 
