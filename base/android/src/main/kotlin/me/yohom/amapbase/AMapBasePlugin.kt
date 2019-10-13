@@ -109,9 +109,9 @@ class AMapBasePlugin {
                     }
 
             // MapView
-            registrar
-                    .platformViewRegistry()
-                    .registerViewFactory("me.yohom/AMapView", AMapFactory(activityState))
+//            registrar
+//                    .platformViewRegistry()
+//                    .registerViewFactory("me.yohom/AMapView", AMapFactory(activityState))
         }
 
         override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
