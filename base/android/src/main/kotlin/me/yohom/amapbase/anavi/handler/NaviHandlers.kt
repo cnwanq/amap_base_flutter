@@ -9,7 +9,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import me.yohom.amapbase.AMapBasePlugin
 import me.yohom.amapbase.NaviMethodHandler
-import me.yohom.amapbase.amap.success
+import me.yohom.amapbase.map.success
 
 object StartNavi: NaviMethodHandler {
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {

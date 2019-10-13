@@ -1,4 +1,4 @@
-package me.yohom.amapbase.amap
+package me.yohom.amapbase.map
 
 import android.annotation.SuppressLint
 import android.app.Activity

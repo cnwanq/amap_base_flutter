@@ -1,4 +1,4 @@
-package me.yohom.amapbase.amap
+package me.yohom.amapbase.map
 
 import android.content.Intent
 import android.graphics.Bitmap
