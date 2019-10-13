@@ -1,4 +1,4 @@
-package me.yohom.amapbase.map
+package me.yohom.amapbase.amap
 
 import android.graphics.BitmapFactory
 import com.amap.api.maps.model.BitmapDescriptor
