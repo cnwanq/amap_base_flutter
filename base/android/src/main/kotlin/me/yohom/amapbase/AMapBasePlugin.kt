@@ -8,7 +8,7 @@ import android.os.Bundle
 import androidx.core.app.ActivityCompat
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
-import me.yohom.amapbase.map.AMapFactory
+#import me.yohom.amapbase.map.AMapFactory
 import java.util.concurrent.atomic.AtomicInteger
 
 const val CREATED = 1
@@ -74,13 +74,13 @@ class AMapBasePlugin {
                     }
 
             // 地图计算工具相关method channel
-            /**/
+            /*
             MethodChannel(registrar.messenger(), "me.yohom/tool")
                     .setMethodCallHandler { call, result ->
                         MAP_METHOD_HANDLER[call.method]
                                 ?.onMethodCall(call, result) ?: result.notImplemented()
                     }
-            
+            */
 
             // 离线地图 channel
             /*
@@ -89,7 +89,7 @@ class AMapBasePlugin {
                         MAP_METHOD_HANDLER[call.method]
                                 ?.onMethodCall(call, result) ?: result.notImplemented()
                     }
-            */        
+             */        
 
             // 搜索 channel
             MethodChannel(registrar.messenger(), "me.yohom/search")
@@ -99,7 +99,7 @@ class AMapBasePlugin {
                     }
 
             // 导航 channel
-            /*
+            /* 
             MethodChannel(registrar.messenger(), "me.yohom/navi")
                     .setMethodCallHandler { call, result ->
                         NAVI_METHOD_HANDLER[call.method]
@@ -115,11 +115,11 @@ class AMapBasePlugin {
                     }
 
             // MapView
-            /* */
+            /* 
             registrar
                     .platformViewRegistry()
                     .registerViewFactory("me.yohom/AMapView", AMapFactory(activityState))
-            
+            */
         }
 
         override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
