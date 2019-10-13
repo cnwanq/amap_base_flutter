@@ -3,8 +3,8 @@ package me.yohom.amapbase
 import me.yohom.amapbase.location.Init
 import me.yohom.amapbase.location.StartLocate
 import me.yohom.amapbase.location.StopLocate
-#import me.yohom.amapbase.map.*
-#import me.yohom.amapbase.navi.handler.StartNavi
+//import me.yohom.amapbase.map.*
+//import me.yohom.amapbase.navi.handler.StartNavi
 import me.yohom.amapbase.search.*
 
 /**
