@@ -78,12 +78,12 @@ class AMapView(context: Context,
         }
 
         // 地图相关method channel
-        val mapChannel = MethodChannel(registrar.messenger(), "$mapChannelName$id")
-        mapChannel.setMethodCallHandler { call, result ->
-            MAP_METHOD_HANDLER[call.method]
-                    ?.with(mapView.map)
-                    ?.onMethodCall(call, result) ?: result.notImplemented()
-        }
+//        val mapChannel = MethodChannel(registrar.messenger(), "$mapChannelName$id")
+//        mapChannel.setMethodCallHandler { call, result ->
+//            MAP_METHOD_HANDLER[call.method]
+//                    ?.with(mapView.map)
+//                    ?.onMethodCall(call, result) ?: result.notImplemented()
+//        }
 
         // marker click event channel
         var eventSink: EventChannel.EventSink? = null

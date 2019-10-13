@@ -81,8 +81,8 @@ class AMapBasePlugin {
 //                    }
 
             // 离线地图 channel
-            MethodChannel(registrar.messenger(), "me.yohom/offline")
-//                    .setMethodCallHandler { call, result ->
+//            MethodChannel(registrar.messenger(), "me.yohom/offline")
+                    .setMethodCallHandler { call, result ->
 //                        MAP_METHOD_HANDLER[call.method]
 //                                ?.onMethodCall(call, result) ?: result.notImplemented()
 //                    }
